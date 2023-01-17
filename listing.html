@@ -1,0 +1,1797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="content-language" content="en-us">
+    <title>Agoda Clone</title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/styles.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" crossorigin="anonymous" />
+
+
+
+</head>
+
+<body>
+
+    <div class="site-container">
+        <!-- header-box -->
+        <div class="header-box">
+            <div class="container-fluid">
+                <header class="navbar navbar-expand navbar-dark flex-md-row bd-navbar mobile-navbar-allign">
+                    <a class="navbar-brand mr-0 mr-md-2 mr-lg-4" href="/" aria-label="agoda">
+                        <img src="img/logos/logo.png" alt="Agoda Bookings">
+                    </a>
+
+                    <div class="navbar-nav-scroll nav-hide">
+                        <ul class="navbar-nav bd-navbar-nav flex-row">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">Hotels & Homes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Flights</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="/">Airport Transfer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">Today's deals</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/"><i class="fas fa-warehouse"></i>Apartments</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle caret-off" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Car Rental</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex navbar-right nav-hide">
+
+                        <li class="nav-item">
+                            <a class="nav-link btn-style btn-pink" href="">List your place</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-2" href="">
+                                <img class="flag-img" src="img/country/uk-flag.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-2" href="/">Sign in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-style" href="">Create Account</a>
+                        </li>
+                    </ul>
+                    <div class="offcanvas-header">
+                        <button data-trigger="#navbar_main" class="navbar-toggler" type="button"><i class="fas fa-bars"></i></button>
+                        <!-- <h5 class="py-2 mx-auto text-white d-inline mx-auto">Navbar</h5> -->
+                    </div>
+                </header>
+            </div>
+        </div>
+        <!-- end ofheader-box -->
+
+        <!-- Mobile Nav -->
+        <b class="screen-overlay"></b>
+
+        <nav id="navbar_main" class="mobile-offcanvas navbar fixed-top navbar-expand-lg navbar-light">
+            <div class="container nav-cont">
+                <a class="navbar-brand d-none d-lg-block" href="#">Navbar</a>
+                <div class="offcanvas-header">
+                    <button class="navbar-toggler btn-close"><i class="fas fa-times"></i></button>
+                    <!-- <h5 class="py-2 mx-auto text-white d-inline mx-auto">Navbar</h5> -->
+                </div>
+                <ul class="navbar-nav mobile-ul">
+                    <li class="nav-item"> <a class="nav-link" href="">Sign In</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Create Account</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">List your PLace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hotels $ Homes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Airport Transfer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Today's deals</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+        <!-- End of Mobile Nav -->
+
+        <!-- tob-bar -->
+        <div class="tob-bar">
+            <div class="container-fluid">
+                <div class="content-contain">
+                    <form>
+                        <div class="tob-bar-box">
+                            <div class="form-group mb-2 mb-md-0 mr-2">
+                                <div class="input-group add-on">
+                                    <div class="input-group-icon">
+                                        <i class="icons icon-search"></i>
+                                    </div>
+                                    <input class="form-control" placeholder="Bangkok" name="srch-term" id="srch-term" type="text">
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-2 mb-md-0 mr-2">
+                                <div class="calender-box">
+                                    <div class="calender-input">
+                                        <div class="input-group-icon">
+                                            <i class="icons icon-calendar"></i>
+                                        </div>
+                                        <div class="calender-date">
+                                            <span class="date">11 Mar 2021</span>
+                                            <span class="day">Thursday</span>
+                                        </div>
+                                    </div>
+                                    <div class="calender-input">
+                                        <div class="input-group-icon">
+                                            <i class="icons icon-calendar"></i>
+                                        </div>
+                                        <div class="calender-date ">
+                                            <span class="date">11 Mar 2021</span>
+                                            <span class="day">Thursday</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group dropdown-group mb-2 mb-md-0 mr-2">
+                                <div class="dropdown keep-inside-clicks-open dropdown-medium">
+                                    <button class="btn btn-primary" type="button" data-toggle="dropdown"> <span><span class="adult-total">3</span> Adults,</span> <span class="children-span"> <span class="child-total">3</span> Children</span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <span class="minus-adult subtract"><i class="fas fa-minus"></i></span>
+                                            <span class="adult-total">1</span> Adults
+                                            <span class="add-adult addition"><i class="fas fa-plus"></i></span>
+                                        </li>
+                                        <li>
+                                            <span class="minus-child subtract"><i class="fas fa-minus"></i></span>
+                                            <span class="child-total">0</span> Children
+                                            <span class="add-child addition"><i class="fas fa-plus"></i></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="form-group top-bar-btn">
+                                <button type="submit" class="btn btn-primary">Search</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- end of tob-bar -->
+
+        <section class="filter-section">
+            <div class="container-fluid">
+                <div class="content-contain">
+                    <div class="filter-section-box">
+                        <div class="filter-box-inner">
+                            <p class="filter-text mr-1 mr-sm-2">Filter:</p>
+                            <div class="dropdown mr-1">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-tag"></i><span>Your Budget</span>
+                                    
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                            <div class="dropdown mr-1">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-star"></i><span>Stars</span>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                            <div class="dropdown mr-1">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-street-view"></i><span>Location</span>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                            <div class="dropdown mr-1">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span>More</span>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-box">
+                            <div class="search-box-inner">
+                                <form>
+                                    <div class="form-group has-search mb-0">
+                                        <span class="fa fa-search form-control-feedback"></span>
+                                        <input type="text" class="form-control" placeholder="What are you looking for?">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- filter-section -->
+
+        <section class="columns-section">
+            <div class="container-fluid">
+                <div class="content-contain">
+                    <div class="columns-section-inner">
+                        <div class="columns-col left">
+                            <div class="map-container">
+                                <div class="img-holder">
+                                    <img src="img/content-img/property-map-entry-1.svg" alt="">
+                                </div>
+                                <div class="map-text">
+                                    SEE MAP VIEW
+                                </div>
+                            </div>
+                            <!-- map-container -->
+
+                            <div class="preference-card">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <i class="fas fa-warehouse"></i>
+                                            <span class="text">Private stays</span>
+                                        </div>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <i class="fas fa-mug-hot"></i>
+                                            <span class="text">Book without credit card</span>
+                                        </div>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <i class="fas fa-user-friends"></i>
+                                            <span class="text">I want free breakfast</span>
+                                        </div>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <i class="far fa-credit-card"></i>
+                                            <span class="text">Book without credit card</span>
+                                        </div>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- preference-card -->
+                            <h6 class="topic-text">Based on properties you've viewed, you might like:</h6>
+                            <a class="Recommended-Property-Card">
+                                <div class="recommended-col left" style="background-image: url(img/places/img-5.jpg);">
+
+                                </div>
+                                <div class="recommended-col right">
+                                    <p class="recommended-title">The Quarter Phromphong </p>
+                                    <div class="recommended-starrating">
+                                        <div class="stars-box">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="listing-review">
+                                        <div class="listing-review-col right pr-2">
+                                            <span class="rating-number">
+                                                  7.7
+                                              </span>
+                                        </div>
+                                        <div class="listing-review-col left">
+                                            <span class="quality">Exceptional</span>
+                                            <span class="quality number">285 reviews</span>
+                                        </div>
+                                    </div>
+                                    <div class="listing-review">
+                                        <div class="listing-review-col left green">
+                                            <span class="quality">93% Match for you!</span>
+                                        </div>
+                                    </div>
+                                    <div class="recommended-prices text-right">
+                                        <p class="extras">Price per night as low as</p>
+                                        <div class="recommended-prices-inner">
+                                            <span class="amount">$27</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- Recommended-Property-Card -->
+                            <a class="Recommended-Property-Card">
+                                <div class="recommended-col left" style="background-image: url(img/places/img-3.jpg);">
+
+                                </div>
+                                <div class="recommended-col right">
+                                    <p class="recommended-title">The Quarter Phromphong </p>
+                                    <div class="recommended-starrating">
+                                        <div class="stars-box">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="listing-review">
+                                        <div class="listing-review-col right pr-2">
+                                            <span class="rating-number">
+                                                  7.7
+                                              </span>
+                                        </div>
+                                        <div class="listing-review-col left">
+                                            <span class="quality">Exceptional</span>
+                                            <span class="quality number">285 reviews</span>
+                                        </div>
+                                    </div>
+                                    <div class="listing-review">
+                                        <div class="listing-review-col left green">
+                                            <span class="quality">93% Match for you!</span>
+                                        </div>
+                                    </div>
+                                    <div class="recommended-prices text-right">
+                                        <p class="extras">Price per night as low as</p>
+                                        <div class="recommended-prices-inner">
+                                            <span class="amount">$27</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- Recommended-Property-Card -->
+                            <a class="Recommended-Property-Card">
+                                <div class="recommended-col left" style="background-image: url(img/places/img-7.jpg);">
+
+                                </div>
+                                <div class="recommended-col right">
+                                    <p class="recommended-title">The Quarter Phromphong </p>
+                                    <div class="recommended-starrating">
+                                        <div class="stars-box">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="listing-review">
+                                        <div class="listing-review-col right pr-2">
+                                            <span class="rating-number">
+                                                  7.7
+                                              </span>
+                                        </div>
+                                        <div class="listing-review-col left">
+                                            <span class="quality">Exceptional</span>
+                                            <span class="quality number">285 reviews</span>
+                                        </div>
+                                    </div>
+                                    <div class="listing-review">
+                                        <div class="listing-review-col left green">
+                                            <span class="quality">93% Match for you!</span>
+                                        </div>
+                                    </div>
+                                    <div class="recommended-prices text-right">
+                                        <p class="extras">Price per night as low as</p>
+                                        <div class="recommended-prices-inner">
+                                            <span class="amount">$27</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- Recommended-Property-Card -->
+                            <a class="Recommended-Property-Card">
+                                <div class="recommended-col left" style="background-image: url(img/places/img-6.jpg);">
+
+                                </div>
+                                <div class="recommended-col right">
+                                    <p class="recommended-title">The Quarter Phromphong </p>
+                                    <div class="recommended-starrating">
+                                        <div class="stars-box">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="listing-review">
+                                        <div class="listing-review-col right pr-2">
+                                            <span class="rating-number">
+                                                  7.7
+                                              </span>
+                                        </div>
+                                        <div class="listing-review-col left">
+                                            <span class="quality">Exceptional</span>
+                                            <span class="quality number">285 reviews</span>
+                                        </div>
+                                    </div>
+                                    <div class="listing-review">
+                                        <div class="listing-review-col left green">
+                                            <span class="quality">93% Match for you!</span>
+                                        </div>
+                                    </div>
+                                    <div class="recommended-prices text-right">
+                                        <p class="extras">Price per night as low as</p>
+                                        <div class="recommended-prices-inner">
+                                            <span class="amount">$27</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- Recommended-Property-Card -->
+                        </div>
+                        <!--end of  columns-col left -->
+                        <div class="columns-col right">
+                            <!-- sort-bar -->
+                            <div class="sort-bar d-flex flex-row justify-content-between">
+                                <div class="sort">Sort</div>
+                                <div class="sort-inner">
+                                    <a>
+                                        Best match
+                                    </a>
+                                </div>
+                                <div class="sort-inner">
+                                    <a>
+                                        Lowest price first
+                                    </a>
+                                </div>
+                                <div class="sort-inner">
+                                    <div class="form-group dropdown-group mb-sm-0">
+                                        <div class="dropdown">
+                                            <button class="dropdown-select" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            
+                                                <div class="dropdown-text">
+                                                    Distance
+                                                </div>  
+                                              <!-- <span class="caret"></span> -->
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                                <li>Option 1</li>
+                                                <li>Option 2</li>
+                                                <li>Option 3</li>
+                                                <li>Option 4</li>
+                                                <li>Option 5</li>
+                                                <li>Option 6</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sort-inner">
+                                    <div class="form-group dropdown-group mb-sm-0">
+                                        <div class="dropdown">
+                                            <button class="dropdown-select" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            
+                                                <div class="dropdown-text">
+                                                    Top Reviewed
+                                                </div>  
+                                              <!-- <span class="caret"></span> -->
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                                <li>Option 1</li>
+                                                <li>Option 2</li>
+                                                <li>Option 3</li>
+                                                <li>Option 4</li>
+                                                <li>Option 5</li>
+                                                <li>Option 6</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- sort-bar -->
+
+                            <!-- begin of listing-card -->
+                            <div class="listing-card">
+                                <div class="listing-image-carousel">
+                                    <span class="top-badge listing-badges-span">
+                                        <span>Free cancellation</span>
+                                    </span>
+                                    <div class="listing-carousel owl-carousel owl-theme">
+
+                                        <div class="item" data-hash="0">
+                                            <div class="listing-image" style="background-image: url(img/places/img-4.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="1">
+                                            <div class="listing-image" style="background-image: url(img/places/img-1.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="2">
+                                            <div class="listing-image" style="background-image: url(img/places/img-3.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="3">
+                                            <div class="listing-image" style="background-image: url(img/places/img-5.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="4">
+                                            <div class="listing-image" style="background-image: url(img/places/img-6.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="5">
+                                            <div class="listing-image" style="background-image: url(img/places/img-7.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="6">
+                                            <div class="listing-image" style="background-image: url(img/places/img-8.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="7">
+                                            <div class="listing-image" style="background-image: url(img/places/img-9.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="8">
+                                            <div class="listing-image" style="background-image: url(img/places/img-9.jpg);"></div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="listing-control">
+                                        <a class="button secondary url" href="#0" style="background-image: url(img/places/img-4.jpg);"></a>
+                                        <a class="button secondary url" href="#1" style="background-image: url(img/places/img-1.jpg);"></a>
+                                        <a class="button secondary url" href="#2" style="background-image: url(img/places/img-3.jpg);"></a>
+                                        <a class="button secondary url" href="#3" style="background-image: url(img/places/img-5.jpg);"></a>
+                                        <a class="button secondary url" href="#4" style="background-image: url(img/places/img-3.jpg);"></a>
+                                        <a class="button secondary url" href="#5" style="background-image: url(img/places/img-6.jpg);"></a>
+                                        <a class="button secondary url" href="#6" style="background-image: url(img/places/img-7.jpg);"></a>
+                                        <a class="button secondary url" href="#7" style="background-image: url(img/places/img-8.jpg);"></a>
+                                        <a class="button secondary url" href="#8" style="background-image: url(img/places/img-9.jpg);"></a>
+                                        <a class="button secondary see-all" href="/" style="background-image: url(img/places/img-9.jpg);">See All</a>
+                                    </div>
+                                </div>
+
+                                <div class="listing-content">
+                                    <div class="listing-col left">
+                                        <!-- listing-badges -->
+                                        <div class="listing-badges">
+                                            <ul>
+                                                <li>
+                                                    <span class="success-badge listing-badges-span">
+                                                        <i class="fas fa-certificate"></i>
+                                                        <span>EasyCancel</span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="trending-badge listing-badges-span">
+                                                        <i class="fas fa-angle-double-up"></i>
+                                                        <span>Trending</span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="top-badge listing-badges-span">
+                                                        <span>EasyCancel</span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="preference-badge listing-badges-span">
+                                                        <i class="fas fa-balance-scale"></i>
+                                                        <span>Our preference</span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- listing-badges -->
+                                        <section class="listing-header">
+                                            <h3 class="hotel-name">Le Clarita</h3>
+                                            <div class="hotel-size"> <i class="fas fa-city"></i> <span>Entire apartment</span></div>
+                                            <div class="listing-rating">
+                                                <div class="stars-box">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half"></i>
+                                                </div>
+                                                <div class="rating--text">
+                                                    <i class="fas fa-map-marker"></i>
+                                                    <span>Pratunam, Bangkok - 0.5 km to center</span>
+                                                </div>
+                                            </div>
+                                            <div class="listing-badges">
+                                                <ul>
+                                                    <li>
+                                                        <span class="preference-badge-green listing-badges-span">
+                                                            <span>Free cancellation</span>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="preference-badge-green listing-badges-span">
+                                                            <span>Pay Later</span>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="preference-badge-green listing-badges-span">
+                                                            <span>Pay at the hotel</span>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="preference-badge-green listing-badges-span">
+                                                            <span>+1</span>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing-badges incentives-badges">
+                                                <ul>
+                                                    <li>
+                                                        <span class="preference-badge-green listing-badges-span">
+                                                            <span>Prices are 22% cheaper than city's average price</span>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="rating--text-addition">
+                                                <i class="fas fa-user-friends"></i>
+                                                <span>Pratunam, Bangkok - 0.5 km to center</span>
+                                            </div>
+                                            <div class="rating--text-addition">
+                                                <i class="fas fa-credit-card"></i>
+                                                <span>Book without a credit card</span>
+                                            </div>
+
+                                        </section>
+                                        <!-- listing-header -->
+                                        <div class="rating--text-addition rating-overview-box">
+                                            <span>Highlights</span>
+                                            <span class="rating-sm"><i class="fas fa-credit-card"></i></span>
+                                            <span class="rating-sm"><i class="fas fa-bed"></i>x 2</span>
+                                            <span class="rating-sm"><i class="fas fa-door-open"></i>x 3</span>
+                                        </div>
+                                    </div>
+                                    <div class="listing-col right">
+                                        <div class="listing-review">
+                                            <div class="listing-review-col left pr-2">
+                                                <span class="quality">Very Good</span>
+                                                <span class="quality number">285 reviews</span>
+                                            </div>
+                                            <div class="listing-review-col right">
+                                                <span class="rating-number">
+                                                      7.7
+                                                  </span>
+                                            </div>
+                                        </div>
+                                        <!-- listing-review -->
+                                        <div class="listing-badges text-right">
+                                            <span class="badge-box-alert">
+                                                <span class="inner-text">78% OFF TODAY</span>
+                                            </span>
+                                            <span class="badge-box">
+                                                <span class="inner-text">Free cancellation</span>
+                                            </span>
+                                            <p class="extras">Price per night as low as</p>
+                                        </div>
+                                        <!-- listing-badges  -->
+                                        <div class="listing-prices text-right">
+                                            <div class="listing-prices-inner">
+                                                <span class="currency">$</span>
+                                                <span class="amount">27</span>
+                                            </div>
+                                            <div class="listing-prices-action">
+                                                <span class="action">FREE CANCELLATION</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of listing-card -->
+
+                            <!-- begin of listing-card -->
+                            <div class="listing-card">
+                                <div class="listing-image-carousel">
+                                    <span class="top-badge listing-badges-span">
+                                        <span>Free cancellation</span>
+                                    </span>
+                                    <div class="listing-carousel owl-carousel owl-theme">
+
+                                        <div class="item" data-hash="0">
+                                            <div class="listing-image" style="background-image: url(img/places/img-4.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="1">
+                                            <div class="listing-image" style="background-image: url(img/places/img-1.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="2">
+                                            <div class="listing-image" style="background-image: url(img/places/img-3.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="3">
+                                            <div class="listing-image" style="background-image: url(img/places/img-5.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="4">
+                                            <div class="listing-image" style="background-image: url(img/places/img-6.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="5">
+                                            <div class="listing-image" style="background-image: url(img/places/img-7.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="6">
+                                            <div class="listing-image" style="background-image: url(img/places/img-8.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="7">
+                                            <div class="listing-image" style="background-image: url(img/places/img-9.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="8">
+                                            <div class="listing-image" style="background-image: url(img/places/img-9.jpg);"></div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="listing-control">
+                                        <a class="button secondary url" href="#0" style="background-image: url(img/places/img-4.jpg);"></a>
+                                        <a class="button secondary url" href="#1" style="background-image: url(img/places/img-1.jpg);"></a>
+                                        <a class="button secondary url" href="#2" style="background-image: url(img/places/img-3.jpg);"></a>
+                                        <a class="button secondary url" href="#3" style="background-image: url(img/places/img-5.jpg);"></a>
+                                        <a class="button secondary url" href="#4" style="background-image: url(img/places/img-3.jpg);"></a>
+                                        <a class="button secondary url" href="#5" style="background-image: url(img/places/img-6.jpg);"></a>
+                                        <a class="button secondary url" href="#6" style="background-image: url(img/places/img-7.jpg);"></a>
+                                        <a class="button secondary url" href="#7" style="background-image: url(img/places/img-8.jpg);"></a>
+                                        <a class="button secondary url" href="#8" style="background-image: url(img/places/img-9.jpg);"></a>
+                                        <a class="button secondary see-all" href="/" style="background-image: url(img/places/img-9.jpg);">See All</a>
+                                    </div>
+                                </div>
+
+                                <div class="listing-content">
+                                    <div class="listing-col left">
+                                        <!-- listing-badges -->
+                                        <div class="listing-badges">
+                                            <ul>
+                                                <li>
+                                                    <span class="success-badge listing-badges-span">
+                                                        <i class="fas fa-certificate"></i>
+                                                        <span>EasyCancel</span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="trending-badge listing-badges-span">
+                                                        <i class="fas fa-angle-double-up"></i>
+                                                        <span>Trending</span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="top-badge listing-badges-span">
+                                                        <span>EasyCancel</span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="preference-badge listing-badges-span">
+                                                        <i class="fas fa-balance-scale"></i>
+                                                        <span>Our preference</span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- listing-badges -->
+                                        <section class="listing-header">
+                                            <h3 class="hotel-name">Le Clarita</h3>
+                                            <div class="hotel-size"> <i class="fas fa-city"></i> <span>Entire apartment</span></div>
+                                            <div class="listing-rating">
+                                                <div class="stars-box">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half"></i>
+                                                </div>
+                                                <div class="rating--text">
+                                                    <i class="fas fa-map-marker"></i>
+                                                    <span>Pratunam, Bangkok - 0.5 km to center</span>
+                                                </div>
+                                            </div>
+                                            <div class="listing-badges">
+                                                <ul>
+                                                    <li>
+                                                        <span class="preference-badge-green listing-badges-span">
+                                                            <span>Free cancellation</span>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="preference-badge-green listing-badges-span">
+                                                            <span>Pay Later</span>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="preference-badge-green listing-badges-span">
+                                                            <span>Pay at the hotel</span>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="preference-badge-green listing-badges-span">
+                                                            <span>+1</span>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing-badges incentives-badges">
+                                                <ul>
+                                                    <li>
+                                                        <span class="preference-badge-green listing-badges-span">
+                                                            <span>Prices are 22% cheaper than city's average price</span>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="rating--text-addition">
+                                                <i class="fas fa-user-friends"></i>
+                                                <span>Pratunam, Bangkok - 0.5 km to center</span>
+                                            </div>
+                                            <div class="rating--text-addition">
+                                                <i class="fas fa-credit-card"></i>
+                                                <span>Book without a credit card</span>
+                                            </div>
+
+                                        </section>
+                                        <!-- listing-header -->
+                                        <div class="rating--text-addition rating-overview-box">
+                                            <span>Highlights</span>
+                                            <span class="rating-sm"><i class="fas fa-credit-card"></i></span>
+                                            <span class="rating-sm"><i class="fas fa-bed"></i>x 2</span>
+                                            <span class="rating-sm"><i class="fas fa-door-open"></i>x 3</span>
+                                        </div>
+                                    </div>
+                                    <div class="listing-col right">
+                                        <div class="listing-review">
+                                            <div class="listing-review-col left pr-2">
+                                                <span class="quality">Very Good</span>
+                                                <span class="quality number">285 reviews</span>
+                                            </div>
+                                            <div class="listing-review-col right">
+                                                <span class="rating-number">
+                                                      7.7
+                                                  </span>
+                                            </div>
+                                        </div>
+                                        <!-- listing-review -->
+                                        <div class="listing-badges text-right">
+                                            <span class="badge-box-alert">
+                                                <span class="inner-text">78% OFF TODAY</span>
+                                            </span>
+                                            <span class="badge-box">
+                                                <span class="inner-text">Free cancellation</span>
+                                            </span>
+                                            <p class="extras">Price per night as low as</p>
+                                        </div>
+                                        <!-- listing-badges  -->
+                                        <div class="listing-prices text-right">
+                                            <div class="listing-prices-inner">
+                                                <span class="currency">$</span>
+                                                <span class="amount">27</span>
+                                            </div>
+                                            <div class="listing-prices-action">
+                                                <span class="action">FREE CANCELLATION</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of listing-card -->
+
+                            <!-- begin of listing-card -->
+                            <div class="listing-card">
+                                <div class="listing-image-carousel">
+                                    <span class="top-badge listing-badges-span">
+                                        <span>Free cancellation</span>
+                                    </span>
+                                    <div class="listing-carousel owl-carousel owl-theme">
+
+                                        <div class="item" data-hash="0">
+                                            <div class="listing-image" style="background-image: url(img/places/img-4.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="1">
+                                            <div class="listing-image" style="background-image: url(img/places/img-1.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="2">
+                                            <div class="listing-image" style="background-image: url(img/places/img-3.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="3">
+                                            <div class="listing-image" style="background-image: url(img/places/img-5.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="4">
+                                            <div class="listing-image" style="background-image: url(img/places/img-6.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="5">
+                                            <div class="listing-image" style="background-image: url(img/places/img-7.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="6">
+                                            <div class="listing-image" style="background-image: url(img/places/img-8.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="7">
+                                            <div class="listing-image" style="background-image: url(img/places/img-9.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="8">
+                                            <div class="listing-image" style="background-image: url(img/places/img-9.jpg);"></div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="listing-control">
+                                        <a class="button secondary url" href="#0" style="background-image: url(img/places/img-4.jpg);"></a>
+                                        <a class="button secondary url" href="#1" style="background-image: url(img/places/img-1.jpg);"></a>
+                                        <a class="button secondary url" href="#2" style="background-image: url(img/places/img-3.jpg);"></a>
+                                        <a class="button secondary url" href="#3" style="background-image: url(img/places/img-5.jpg);"></a>
+                                        <a class="button secondary url" href="#4" style="background-image: url(img/places/img-3.jpg);"></a>
+                                        <a class="button secondary url" href="#5" style="background-image: url(img/places/img-6.jpg);"></a>
+                                        <a class="button secondary url" href="#6" style="background-image: url(img/places/img-7.jpg);"></a>
+                                        <a class="button secondary url" href="#7" style="background-image: url(img/places/img-8.jpg);"></a>
+                                        <a class="button secondary url" href="#8" style="background-image: url(img/places/img-9.jpg);"></a>
+                                        <a class="button secondary see-all" href="/" style="background-image: url(img/places/img-9.jpg);">See All</a>
+                                    </div>
+                                </div>
+
+                                <div class="listing-content">
+                                    <div class="listing-col left">
+                                        <!-- listing-badges -->
+                                        <div class="listing-badges">
+                                            <ul>
+                                                <li>
+                                                    <span class="success-badge listing-badges-span">
+                                                        <i class="fas fa-certificate"></i>
+                                                        <span>EasyCancel</span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="trending-badge listing-badges-span">
+                                                        <i class="fas fa-angle-double-up"></i>
+                                                        <span>Trending</span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="top-badge listing-badges-span">
+                                                        <span>EasyCancel</span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="preference-badge listing-badges-span">
+                                                        <i class="fas fa-balance-scale"></i>
+                                                        <span>Our preference</span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- listing-badges -->
+                                        <section class="listing-header">
+                                            <h3 class="hotel-name">Le Clarita</h3>
+                                            <div class="hotel-size"> <i class="fas fa-city"></i> <span>Entire apartment</span></div>
+                                            <div class="listing-rating">
+                                                <div class="stars-box">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half"></i>
+                                                </div>
+                                                <div class="rating--text">
+                                                    <i class="fas fa-map-marker"></i>
+                                                    <span>Pratunam, Bangkok - 0.5 km to center</span>
+                                                </div>
+                                            </div>
+                                            <div class="listing-badges">
+                                                <ul>
+                                                    <li>
+                                                        <span class="preference-badge-green listing-badges-span">
+                                                            <span>Free cancellation</span>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="preference-badge-green listing-badges-span">
+                                                            <span>Pay Later</span>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="preference-badge-green listing-badges-span">
+                                                            <span>Pay at the hotel</span>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="preference-badge-green listing-badges-span">
+                                                            <span>+1</span>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing-badges incentives-badges">
+                                                <ul>
+                                                    <li>
+                                                        <span class="preference-badge-green listing-badges-span">
+                                                            <span>Prices are 22% cheaper than city's average price</span>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="rating--text-addition">
+                                                <i class="fas fa-user-friends"></i>
+                                                <span>Pratunam, Bangkok - 0.5 km to center</span>
+                                            </div>
+                                            <div class="rating--text-addition">
+                                                <i class="fas fa-credit-card"></i>
+                                                <span>Book without a credit card</span>
+                                            </div>
+
+                                        </section>
+                                        <!-- listing-header -->
+                                        <div class="rating--text-addition rating-overview-box">
+                                            <span>Highlights</span>
+                                            <span class="rating-sm"><i class="fas fa-credit-card"></i></span>
+                                            <span class="rating-sm"><i class="fas fa-bed"></i>x 2</span>
+                                            <span class="rating-sm"><i class="fas fa-door-open"></i>x 3</span>
+                                        </div>
+                                    </div>
+                                    <div class="listing-col right">
+                                        <div class="listing-review">
+                                            <div class="listing-review-col left pr-2">
+                                                <span class="quality">Very Good</span>
+                                                <span class="quality number">285 reviews</span>
+                                            </div>
+                                            <div class="listing-review-col right">
+                                                <span class="rating-number">
+                                                      7.7
+                                                  </span>
+                                            </div>
+                                        </div>
+                                        <!-- listing-review -->
+                                        <div class="listing-badges text-right">
+                                            <span class="badge-box-alert">
+                                                <span class="inner-text">78% OFF TODAY</span>
+                                            </span>
+                                            <span class="badge-box">
+                                                <span class="inner-text">Free cancellation</span>
+                                            </span>
+                                            <p class="extras">Price per night as low as</p>
+                                        </div>
+                                        <!-- listing-badges  -->
+                                        <div class="listing-prices text-right">
+                                            <div class="listing-prices-inner">
+                                                <span class="currency">$</span>
+                                                <span class="amount">27</span>
+                                            </div>
+                                            <div class="listing-prices-action">
+                                                <span class="action">FREE CANCELLATION</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of listing-card -->
+
+
+                            <!-- begin of listing-card -->
+                            <div class="listing-card">
+                                <div class="listing-image-carousel">
+                                    <span class="top-badge listing-badges-span">
+                                        <span>Free cancellation</span>
+                                    </span>
+                                    <div class="listing-carousel owl-carousel owl-theme">
+
+                                        <div class="item" data-hash="0">
+                                            <div class="listing-image" style="background-image: url(img/places/img-4.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="1">
+                                            <div class="listing-image" style="background-image: url(img/places/img-1.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="2">
+                                            <div class="listing-image" style="background-image: url(img/places/img-3.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="3">
+                                            <div class="listing-image" style="background-image: url(img/places/img-5.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="4">
+                                            <div class="listing-image" style="background-image: url(img/places/img-6.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="5">
+                                            <div class="listing-image" style="background-image: url(img/places/img-7.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="6">
+                                            <div class="listing-image" style="background-image: url(img/places/img-8.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="7">
+                                            <div class="listing-image" style="background-image: url(img/places/img-9.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="8">
+                                            <div class="listing-image" style="background-image: url(img/places/img-9.jpg);"></div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="listing-control">
+                                        <a class="button secondary url" href="#0" style="background-image: url(img/places/img-4.jpg);"></a>
+                                        <a class="button secondary url" href="#1" style="background-image: url(img/places/img-1.jpg);"></a>
+                                        <a class="button secondary url" href="#2" style="background-image: url(img/places/img-3.jpg);"></a>
+                                        <a class="button secondary url" href="#3" style="background-image: url(img/places/img-5.jpg);"></a>
+                                        <a class="button secondary url" href="#4" style="background-image: url(img/places/img-3.jpg);"></a>
+                                        <a class="button secondary url" href="#5" style="background-image: url(img/places/img-6.jpg);"></a>
+                                        <a class="button secondary url" href="#6" style="background-image: url(img/places/img-7.jpg);"></a>
+                                        <a class="button secondary url" href="#7" style="background-image: url(img/places/img-8.jpg);"></a>
+                                        <a class="button secondary url" href="#8" style="background-image: url(img/places/img-9.jpg);"></a>
+                                        <a class="button secondary see-all" href="/" style="background-image: url(img/places/img-9.jpg);">See All</a>
+                                    </div>
+                                </div>
+
+                                <div class="listing-content">
+                                    <div class="listing-col left">
+                                        <!-- listing-badges -->
+                                        <div class="listing-badges">
+                                            <ul>
+                                                <li>
+                                                    <span class="success-badge listing-badges-span">
+                                                        <i class="fas fa-certificate"></i>
+                                                        <span>EasyCancel</span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="trending-badge listing-badges-span">
+                                                        <i class="fas fa-angle-double-up"></i>
+                                                        <span>Trending</span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="top-badge listing-badges-span">
+                                                        <span>EasyCancel</span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="preference-badge listing-badges-span">
+                                                        <i class="fas fa-balance-scale"></i>
+                                                        <span>Our preference</span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- listing-badges -->
+                                        <section class="listing-header">
+                                            <h3 class="hotel-name">Le Clarita</h3>
+                                            <div class="hotel-size"> <i class="fas fa-city"></i> <span>Entire apartment</span></div>
+                                            <div class="listing-rating">
+                                                <div class="stars-box">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half"></i>
+                                                </div>
+                                                <div class="rating--text">
+                                                    <i class="fas fa-map-marker"></i>
+                                                    <span>Pratunam, Bangkok - 0.5 km to center</span>
+                                                </div>
+                                            </div>
+                                            <div class="listing-badges">
+                                                <ul>
+                                                    <li>
+                                                        <span class="preference-badge-green listing-badges-span">
+                                                            <span>Free cancellation</span>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="preference-badge-green listing-badges-span">
+                                                            <span>Pay Later</span>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="preference-badge-green listing-badges-span">
+                                                            <span>Pay at the hotel</span>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="preference-badge-green listing-badges-span">
+                                                            <span>+1</span>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing-badges incentives-badges">
+                                                <ul>
+                                                    <li>
+                                                        <span class="preference-badge-green listing-badges-span">
+                                                            <span>Prices are 22% cheaper than city's average price</span>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="rating--text-addition">
+                                                <i class="fas fa-user-friends"></i>
+                                                <span>Pratunam, Bangkok - 0.5 km to center</span>
+                                            </div>
+                                            <div class="rating--text-addition">
+                                                <i class="fas fa-credit-card"></i>
+                                                <span>Book without a credit card</span>
+                                            </div>
+
+                                        </section>
+                                        <!-- listing-header -->
+                                        <div class="rating--text-addition rating-overview-box">
+                                            <span>Highlights</span>
+                                            <span class="rating-sm"><i class="fas fa-credit-card"></i></span>
+                                            <span class="rating-sm"><i class="fas fa-bed"></i>x 2</span>
+                                            <span class="rating-sm"><i class="fas fa-door-open"></i>x 3</span>
+                                        </div>
+                                    </div>
+                                    <div class="listing-col right">
+                                        <div class="listing-review">
+                                            <div class="listing-review-col left pr-2">
+                                                <span class="quality">Very Good</span>
+                                                <span class="quality number">285 reviews</span>
+                                            </div>
+                                            <div class="listing-review-col right">
+                                                <span class="rating-number">
+                                                      7.7
+                                                  </span>
+                                            </div>
+                                        </div>
+                                        <!-- listing-review -->
+                                        <div class="listing-badges text-right">
+                                            <span class="badge-box-alert">
+                                                <span class="inner-text">78% OFF TODAY</span>
+                                            </span>
+                                            <span class="badge-box">
+                                                <span class="inner-text">Free cancellation</span>
+                                            </span>
+                                            <p class="extras">Price per night as low as</p>
+                                        </div>
+                                        <!-- listing-badges  -->
+                                        <div class="listing-prices text-right">
+                                            <div class="listing-prices-inner">
+                                                <span class="currency">$</span>
+                                                <span class="amount">27</span>
+                                            </div>
+                                            <div class="listing-prices-action">
+                                                <span class="action">FREE CANCELLATION</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of listing-card -->
+
+
+                            <!-- begin of listing-card -->
+                            <div class="listing-card">
+                                <div class="listing-image-carousel">
+                                    <span class="top-badge listing-badges-span">
+                                        <span>Free cancellation</span>
+                                    </span>
+                                    <div class="listing-carousel owl-carousel owl-theme">
+
+                                        <div class="item" data-hash="0">
+                                            <div class="listing-image" style="background-image: url(img/places/img-4.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="1">
+                                            <div class="listing-image" style="background-image: url(img/places/img-1.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="2">
+                                            <div class="listing-image" style="background-image: url(img/places/img-3.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="3">
+                                            <div class="listing-image" style="background-image: url(img/places/img-5.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="4">
+                                            <div class="listing-image" style="background-image: url(img/places/img-6.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="5">
+                                            <div class="listing-image" style="background-image: url(img/places/img-7.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="6">
+                                            <div class="listing-image" style="background-image: url(img/places/img-8.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="7">
+                                            <div class="listing-image" style="background-image: url(img/places/img-9.jpg);"></div>
+                                        </div>
+                                        <div class="item" data-hash="8">
+                                            <div class="listing-image" style="background-image: url(img/places/img-9.jpg);"></div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="listing-control">
+                                        <a class="button secondary url" href="#0" style="background-image: url(img/places/img-4.jpg);"></a>
+                                        <a class="button secondary url" href="#1" style="background-image: url(img/places/img-1.jpg);"></a>
+                                        <a class="button secondary url" href="#2" style="background-image: url(img/places/img-3.jpg);"></a>
+                                        <a class="button secondary url" href="#3" style="background-image: url(img/places/img-5.jpg);"></a>
+                                        <a class="button secondary url" href="#4" style="background-image: url(img/places/img-3.jpg);"></a>
+                                        <a class="button secondary url" href="#5" style="background-image: url(img/places/img-6.jpg);"></a>
+                                        <a class="button secondary url" href="#6" style="background-image: url(img/places/img-7.jpg);"></a>
+                                        <a class="button secondary url" href="#7" style="background-image: url(img/places/img-8.jpg);"></a>
+                                        <a class="button secondary url" href="#8" style="background-image: url(img/places/img-9.jpg);"></a>
+                                        <a class="button secondary see-all" href="/" style="background-image: url(img/places/img-9.jpg);">See All</a>
+                                    </div>
+                                </div>
+
+                                <div class="listing-content">
+                                    <div class="listing-col left">
+                                        <!-- listing-badges -->
+                                        <div class="listing-badges">
+                                            <ul>
+                                                <li>
+                                                    <span class="success-badge listing-badges-span">
+                                                        <i class="fas fa-certificate"></i>
+                                                        <span>EasyCancel</span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="trending-badge listing-badges-span">
+                                                        <i class="fas fa-angle-double-up"></i>
+                                                        <span>Trending</span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="top-badge listing-badges-span">
+                                                        <span>EasyCancel</span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="preference-badge listing-badges-span">
+                                                        <i class="fas fa-balance-scale"></i>
+                                                        <span>Our preference</span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- listing-badges -->
+                                        <section class="listing-header">
+                                            <h3 class="hotel-name">Le Clarita</h3>
+                                            <div class="hotel-size"> <i class="fas fa-city"></i> <span>Entire apartment</span></div>
+                                            <div class="listing-rating">
+                                                <div class="stars-box">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half"></i>
+                                                </div>
+                                                <div class="rating--text">
+                                                    <i class="fas fa-map-marker"></i>
+                                                    <span>Pratunam, Bangkok - 0.5 km to center</span>
+                                                </div>
+                                            </div>
+                                            <div class="listing-badges">
+                                                <ul>
+                                                    <li>
+                                                        <span class="preference-badge-green listing-badges-span">
+                                                            <span>Free cancellation</span>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="preference-badge-green listing-badges-span">
+                                                            <span>Pay Later</span>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="preference-badge-green listing-badges-span">
+                                                            <span>Pay at the hotel</span>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="preference-badge-green listing-badges-span">
+                                                            <span>+1</span>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="listing-badges incentives-badges">
+                                                <ul>
+                                                    <li>
+                                                        <span class="preference-badge-green listing-badges-span">
+                                                            <span>Prices are 22% cheaper than city's average price</span>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="rating--text-addition">
+                                                <i class="fas fa-user-friends"></i>
+                                                <span>Pratunam, Bangkok - 0.5 km to center</span>
+                                            </div>
+                                            <div class="rating--text-addition">
+                                                <i class="fas fa-credit-card"></i>
+                                                <span>Book without a credit card</span>
+                                            </div>
+
+                                        </section>
+                                        <!-- listing-header -->
+                                        <div class="rating--text-addition rating-overview-box">
+                                            <span>Highlights</span>
+                                            <span class="rating-sm"><i class="fas fa-credit-card"></i></span>
+                                            <span class="rating-sm"><i class="fas fa-bed"></i>x 2</span>
+                                            <span class="rating-sm"><i class="fas fa-door-open"></i>x 3</span>
+                                        </div>
+                                    </div>
+                                    <div class="listing-col right">
+                                        <div class="listing-review">
+                                            <div class="listing-review-col left pr-2">
+                                                <span class="quality">Very Good</span>
+                                                <span class="quality number">285 reviews</span>
+                                            </div>
+                                            <div class="listing-review-col right">
+                                                <span class="rating-number">
+                                                      7.7
+                                                  </span>
+                                            </div>
+                                        </div>
+                                        <!-- listing-review -->
+                                        <div class="listing-badges text-right">
+                                            <span class="badge-box-alert">
+                                                <span class="inner-text">78% OFF TODAY</span>
+                                            </span>
+                                            <span class="badge-box">
+                                                <span class="inner-text">Free cancellation</span>
+                                            </span>
+                                            <p class="extras">Price per night as low as</p>
+                                        </div>
+                                        <!-- listing-badges  -->
+                                        <div class="listing-prices text-right">
+                                            <div class="listing-prices-inner">
+                                                <span class="currency">$</span>
+                                                <span class="amount">27</span>
+                                            </div>
+                                            <div class="listing-prices-action">
+                                                <span class="action">FREE CANCELLATION</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of listing-card -->
+
+                            <!-- pagination -->
+                            <div class="pagination-container text-right">
+                                <nav aria-label="...">
+                                    <ul class="pagination">
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item active">
+                                            <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Next</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- pagination -->
+
+                        </div>
+                        <!-- end of columns-col right -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- listing-section -->
+
+        <!-- sub-footer-section -->
+        <section class="sub-footer-section destinations-section grey-section">
+            <div class="container-fluid">
+                <div class="content-contain">
+                    <div class="row row-footer">
+                        <div class="col">
+                            <div class="sub-footer-box">
+                                <h5>Help</h5>
+                                <ul>
+                                    <li><a>Help center</a></li>
+                                    <li><a>FAQs</a></li>
+                                    <li><a>Privacy policy</a></li>
+                                    <li><a>Cookie policy</a></li>
+                                    <li><a>Terms of use</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="sub-footer-box">
+                                <h5>About us</h5>
+                                <ul>
+                                    <li><a>About us</a></li>
+                                    <li><a>FAQs</a></li>
+                                    <li><a>Privacy policy</a></li>
+                                    <li><a>Cookie policy</a></li>
+                                    <li><a>Terms of use</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="sub-footer-box">
+                                <h5>Destinations</h5>
+                                <ul>
+                                    <li><a>Help center</a></li>
+                                    <li><a>FAQs</a></li>
+                                    <li><a>Privacy policy</a></li>
+                                    <li><a>Cookie policy</a></li>
+                                    <li><a>Terms of use</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="sub-footer-box">
+                                <h5>Partner with us</h5>
+                                <ul>
+                                    <li><a>Help center</a></li>
+                                    <li><a>FAQs</a></li>
+                                    <li><a>Privacy policy</a></li>
+                                    <li><a>Cookie policy</a></li>
+                                    <li><a>Terms of use</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="sub-footer-box">
+                                <h5>Get the app</h5>
+                                <ul>
+                                    <li><a>iOS app</a></li>
+                                    <li><a>Android app</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- sub-footer-section -->
+
+        <!-- footer-section -->
+        <section class="sub-footer-section footer-section">
+            <div class="container-fluid">
+                <div class="content-contain">
+                    <div class="row row-footer">
+                        <div class="col">
+                            <div class="sub-footer-box">
+                                <h5>Destination Cities</h5>
+                                <h5>Asia</h5>
+                                <ul>
+                                    <li><a>Bali Hotels</a></li>
+                                    <li><a>Bali Hotels</a></li>
+                                    <li><a>Bali Hotels</a></li>
+                                    <li><a>Bali Hotels</a></li>
+                                    <li><a>Bali Hotels</a></li>
+                                </ul>
+                                <h5>Asia</h5>
+                                <ul>
+                                    <li><a>Singapore Hotels</a></li>
+                                    <li><a>Singapore Hotels</a></li>
+                                    <li><a>Singapore Hotels</a></li>
+                                    <li><a>Singapore Hotels</a></li>
+                                    <li><a>Singapore Hotels</a></li>
+                                </ul>
+                                <h5>Asia</h5>
+                                <ul>
+                                    <li><a>Singapore Hotels</a></li>
+                                    <li><a>Singapore Hotels</a></li>
+                                    <li><a>Singapore Hotels</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="sub-footer-box">
+                                <h5>Europe</h5>
+                                <ul>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                </ul>
+                                <h5>Middle East</h5>
+                                <ul>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                </ul>
+                                <h5>Middle East</h5>
+                                <ul>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                </ul>
+                                <h5>Middle East</h5>
+                                <ul>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="sub-footer-box">
+                                <h5>Americas</h5>
+                                <ul>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                </ul>
+                                <h5>Africa</h5>
+                                <ul>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                </ul>
+                                <h5>Africa</h5>
+                                <ul>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="sub-footer-box">
+                                <h5>Europe</h5>
+                                <ul>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                </ul>
+                                <h5>Middle East</h5>
+                                <ul>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                </ul>
+                                <h5>Middle East</h5>
+                                <ul>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                </ul>
+                                <h5>Middle East</h5>
+                                <ul>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="sub-footer-box">
+                                <h5>Middle East</h5>
+                                <ul>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                </ul>
+                                <h5>Americas</h5>
+                                <ul>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                </ul>
+                                <h5>Americas</h5>
+                                <ul>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="sub-footer-box">
+                                <h5>Americas</h5>
+                                <ul>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                </ul>
+                                <h5>Africa</h5>
+                                <ul>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                </ul>
+                                <h5>Africa</h5>
+                                <ul>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer-section -->
+
+        <!-- copyright-section -->
+        <section class="copyright-section">
+            <div class="container-fluid">
+                <div class="content-contain">
+                    <div class="text-center copyrights-text">
+                        <p class="copyrights-info">All material herein © 2005–2021 Agoda Company Pte. Ltd. All Rights Reserved.</p>
+                        <p class="copyrights-info">Agoda is part of Booking Holdings Inc., the world leader in online travel &amp; related services.</p>
+                    </div>
+                    <ul class="copyright-ul">
+                        <li>
+                            <a href="">
+                                <img src="img/logos/logo.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/logos/logo.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/logos/logo.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/logos/logo.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/logos/logo.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/logos/logo.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="text-center copyrights-text">
+                        <p class="copyrights-info">©2021</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- copyright-section -->
+
+
+
+    </div>
+    <!-- entry-box -->
+
+    <script src="js/jquery.min.js " type="text/javascript "></script>
+    <script src="js/jquery.matchHeight.js " type="text/javascript "></script>
+    <script src="js/owl.carousel.js" type="text/javascript "></script>
+    <script src="js/bootstrap.bundle.js " type="text/javascript "></script>
+    <script src="js/main.js" type="text/javascript "></script>
+
+</body>
+
+</html>

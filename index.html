@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="content-language" content="en-us">
+    <title>Agoda Clone</title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/styles.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" crossorigin="anonymous" />
+
+
+
+</head>
+
+<body>
+
+    <div class="site-container">
+        <!-- header-box -->
+        <div class="header-box">
+            <div class="container-fluid">
+                <header class="navbar navbar-expand navbar-dark flex-md-row bd-navbar mobile-navbar-allign">
+                    <a class="navbar-brand mr-0 mr-md-2 mr-lg-4" href="/" aria-label="agoda">
+                        <img src="img/logos/logo.png" alt="Agoda Bookings">
+                    </a>
+
+                    <div class="navbar-nav-scroll nav-hide">
+                        <ul class="navbar-nav bd-navbar-nav flex-row">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">Hotels & Homes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Flights</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="/">Airport Transfer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">Today's deals</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/"><i class="fas fa-warehouse"></i>Apartments</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle caret-off" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Car Rental</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex navbar-right nav-hide">
+
+                        <li class="nav-item">
+                            <a class="nav-link btn-style btn-pink" href="">List your place</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-2" href="">
+                                <img class="flag-img" src="img/country/uk-flag.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-2" href="/">Sign in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-style" href="">Create Account</a>
+                        </li>
+                    </ul>
+                    <div class="offcanvas-header">
+                        <button data-trigger="#navbar_main" class="navbar-toggler" type="button"><i class="fas fa-bars"></i></button>
+                        <!-- <h5 class="py-2 mx-auto text-white d-inline mx-auto">Navbar</h5> -->
+                    </div>
+                </header>
+            </div>
+        </div>
+        <!-- end ofheader-box -->
+
+        <!-- Mobile Nav -->
+        <b class="screen-overlay"></b>
+
+        <nav id="navbar_main" class="mobile-offcanvas navbar fixed-top navbar-expand-lg navbar-light">
+            <div class="container nav-cont">
+                <a class="navbar-brand d-none d-lg-block" href="#">Navbar</a>
+                <div class="offcanvas-header">
+                    <button class="navbar-toggler btn-close"><i class="fas fa-times"></i></button>
+                    <!-- <h5 class="py-2 mx-auto text-white d-inline mx-auto">Navbar</h5> -->
+                </div>
+                <ul class="navbar-nav mobile-ul">
+                    <li class="nav-item"> <a class="nav-link" href="">Sign In</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Create Account</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">List your PLace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hotels $ Homes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Airport Transfer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Today's deals</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+        <!-- End of Mobile Nav -->
+
+        <!-- tob-bar -->
+        <div class="tob-bar invisible-tob-bar">
+            <div class="container-fluid">
+                <div class="content-contain">
+                    <form>
+                        <div class="tob-bar-box">
+                            <div class="form-group mb-2 mb-md-0 mr-2">
+                                <div class="input-group add-on">
+                                    <div class="input-group-icon">
+                                        <i class="icons icon-search"></i>
+                                    </div>
+                                    <input class="form-control" placeholder="Bangkok" name="srch-term" id="srch-term" type="text">
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-2 mb-md-0 mr-2">
+                                <div class="calender-box">
+                                    <div class="calender-input">
+                                        <div class="input-group-icon">
+                                            <i class="icons icon-calendar"></i>
+                                        </div>
+                                        <div class="calender-date">
+                                            <span class="date">11 Mar 2021</span>
+                                            <span class="day">Thursday</span>
+                                        </div>
+                                    </div>
+                                    <div class="calender-input">
+                                        <div class="input-group-icon">
+                                            <i class="icons icon-calendar"></i>
+                                        </div>
+                                        <div class="calender-date ">
+                                            <span class="date">11 Mar 2021</span>
+                                            <span class="day">Thursday</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group dropdown-group mb-2 mb-md-0 mr-2">
+                                <div class="dropdown keep-inside-clicks-open dropdown-medium">
+                                    <button class="btn btn-primary" type="button" data-toggle="dropdown"> <span><span class="adult-total">3</span> Adults,</span> <span class="children-span"> <span class="child-total">3</span> Children</span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <span class="minus-adult subtract"><i class="fas fa-minus"></i></span>
+                                            <span class="adult-total">1</span> Adults
+                                            <span class="add-adult addition"><i class="fas fa-plus"></i></span>
+                                        </li>
+                                        <li>
+                                            <span class="minus-child subtract"><i class="fas fa-minus"></i></span>
+                                            <span class="child-total">0</span> Children
+                                            <span class="add-child addition"><i class="fas fa-plus"></i></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- <div class="form-group dropdown-group mb-2 mb-md-0 mr-2">
+                                <div class="dropdown">
+                                    <button class="dropdown-select" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="input-group-icon"></div>
+                                        <div>
+                                           2 adults
+                                        </div>   -->
+                            <!-- <span class="caret"></span> -->
+                            <!-- </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                        <li>Option 1 </li>
+                                        <li>Option 2</li>
+                                        <li>Option 3</li>
+                                        <li>Option 4</li>
+                                        <li>Option 5</li>
+                                        <li>Option 6</li>
+                                    </ul>
+                                </div>
+                            </div> -->
+
+                            <div class="form-group top-bar-btn">
+                                <button type="submit" class="btn btn-primary">Search</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- end of tob-bar -->
+
+        <!-- navbar-below -->
+        <div class="navbar-below">
+            <div class="container-fluid">
+                <p class="text-center">
+                    We know your travel plans may be impacted by COVID-19. Check local travel restrictions prior to booking your trip.
+                    <a href="">Learn more</a>
+                </p>
+            </div>
+        </div>
+        <!-- end of navbar-below -->
+
+        <section class="banner-section">
+
+            <div class="container-fluid">
+                <!-- tabs-section -->
+                <div class="tabs-section content-contain mx-auto text-center">
+                    <ul class="nav nav-pills">
+                        <li class="">
+                            <a class="active" data-toggle="pill" href="#flamingo" role="tab" aria-controls="pills-flamingo" aria-selected="true">
+                                <div class="icon"><i class="fas fa-building"></i></div>
+                                <div class="pill-text">
+                                    <h6>Hotels & Homes</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a class="" data-toggle="pill" href="#cuckoo" role="tab" aria-controls="pills-cuckoo" aria-selected="false">
+                                <div class="icon"><i class="fas fa-house-damage"></i></div>
+                                <div class="pill-text">
+                                    <h6>Private Stays</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a class="" data-toggle="pill" href="#ostrich" role="tab" aria-controls="pills-ostrich" aria-selected="false">
+                                <div class="icon"><i class="fas fa-calendar-week"></i></div>
+                                <div class="pill-text">
+                                    <h6>Monthly stay</h6>
+                                </div>
+                                <span class="new">New!</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <div class="tab-content mt-3">
+                        <div class="tab-pane fade show active" id="flamingo" role="tabpanel" aria-labelledby="flamingo-tab">
+                            <div class="tabs-upper text-center">
+                                <h1>BOOK A HOME ON AGODA HOMES</h1>
+                                <h2>More spacious. More local. More of why you travel.</h2>
+                            </div>
+                            <div class="tabs-lower">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <div class="input-group add-on">
+                                                    <div class="input-group-icon">
+                                                        <i class="icons icon-search"></i>
+                                                    </div>
+                                                    <input class="form-control" placeholder="Bangkok" name="srch-term" id="srch-term" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 pr-md-2">
+                                            <div class="form-group mb-md-0">
+                                                <div class="calender-box">
+                                                    <div class="calender-input">
+                                                        <div class="input-group-icon">
+                                                            <i class="icons icon-calendar"></i>
+                                                        </div>
+                                                        <div class="calender-date">
+                                                            <span class="date">11 Mar 2021</span>
+                                                            <span class="day">Thursday</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="calender-input">
+                                                        <div class="input-group-icon">
+                                                            <i class="icons icon-calendar"></i>
+                                                        </div>
+                                                        <div class="calender-date ">
+                                                            <span class="date">11 Mar 2021</span>
+                                                            <span class="day">Thursday</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 pl-md-2">
+                                            <div class="form-group dropdown-group mb-md-0">
+
+                                                <div class="dropdown keep-inside-clicks-open dropdown-medium">
+                                                    <button class="btn btn-primary" type="button" data-toggle="dropdown"> <span><span class="adult-total">3</span> Adults,</span> <span class="children-span"> <span class="child-total">3</span> Children</span>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li>
+                                                            <span class="minus-adult subtract"><i class="fas fa-minus"></i></span>
+                                                            <span class="adult-total">1</span> Adults
+                                                            <span class="add-adult addition"><i class="fas fa-plus"></i></span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="minus-child subtract"><i class="fas fa-minus"></i></span>
+                                                            <span class="child-total">0</span> Children
+                                                            <span class="add-child addition"><i class="fas fa-plus"></i></span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="booking-btn">
+                                        <button type="submit" class="btn btn-primary">Search</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="cuckoo" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="tabs-upper text-center">
+                                <h1>HOTELS, RESORTS, HOSTELS & MORE</h1>
+                                <h2>Get the best prices on 2,000,000+ properties, worldwide</h2>
+                            </div>
+                            <div class="tabs-lower">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <div class="input-group add-on">
+                                                    <div class="input-group-icon">
+                                                        <i class="icons icon-search"></i>
+                                                    </div>
+                                                    <input class="form-control" placeholder="Bangkok" name="srch-term" id="srch-term" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 pr-md-2">
+                                            <div class="form-group mb-sm-0">
+                                                <div class="calender-box">
+                                                    <div class="calender-input">
+                                                        <div class="input-group-icon">
+                                                            <i class="icons icon-calendar"></i>
+                                                        </div>
+                                                        <div class="calender-date">
+                                                            <span class="date">11 Mar 2021</span>
+                                                            <span class="day">Thursday</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="calender-input">
+                                                        <div class="input-group-icon">
+                                                            <i class="icons icon-calendar"></i>
+                                                        </div>
+                                                        <div class="calender-date ">
+                                                            <span class="date">11 Mar 2021</span>
+                                                            <span class="day">Thursday</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 pl-md-2">
+                                            <div class="form-group dropdown-group mb-sm-0">
+
+                                                <div class="dropdown">
+                                                    <button class="dropdown-select" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <div class="input-group-icon"></div>
+                                                        <div>
+                                                           2 adults
+                                                        </div>  
+                                                      <!-- <span class="caret"></span> -->
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                                        <li>Option 1</li>
+                                                        <li>Option 2</li>
+                                                        <li>Option 3</li>
+                                                        <li>Option 4</li>
+                                                        <li>Option 5</li>
+                                                        <li>Option 6</li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="booking-btn">
+                                        <button type="submit" class="btn btn-primary">Search</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="ostrich" role="tabpanel" aria-labelledby="ostrich-tab">
+                            <div class="tabs-upper text-center">
+                                <h1>HOTELS, RESORTS, HOSTELS & MORE</h1>
+                                <h2>More spacious. More local. More of why you travel.</h2>
+                            </div>
+                            <div class="tabs-lower">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <div class="input-group add-on">
+                                                    <div class="input-group-icon">
+                                                        <i class="icons icon-search"></i>
+                                                    </div>
+                                                    <input class="form-control" placeholder="Bangkok" name="srch-term" id="srch-term" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 pr-md-2">
+                                            <div class="form-group mb-sm-0">
+                                                <div class="calender-box">
+                                                    <div class="calender-input">
+                                                        <div class="input-group-icon">
+                                                            <i class="icons icon-calendar"></i>
+                                                        </div>
+                                                        <div class="calender-date">
+                                                            <span class="date">11 Mar 2021</span>
+                                                            <span class="day">Thursday</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="calender-input">
+                                                        <div class="input-group-icon">
+                                                            <i class="icons icon-calendar"></i>
+                                                        </div>
+                                                        <div class="calender-date ">
+                                                            <span class="date">11 Mar 2021</span>
+                                                            <span class="day">Thursday</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 pl-md-2">
+                                            <div class="form-group dropdown-group mb-sm-0">
+
+                                                <div class="dropdown">
+                                                    <button class="dropdown-select" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <div class="input-group-icon"></div>
+                                                        <div>
+                                                           2 adults
+                                                        </div>  
+                                                      <!-- <span class="caret"></span> -->
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                                        <li>Option 1</li>
+                                                        <li>Option 2</li>
+                                                        <li>Option 3</li>
+                                                        <li>Option 4</li>
+                                                        <li>Option 5</li>
+                                                        <li>Option 6</li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="booking-btn">
+                                        <button type="submit" class="btn btn-primary">Search</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- tabs-section -->
+            </div>
+
+        </section>
+        <!-- banner-section -->
+
+        <!-- cancel-alert -->
+        <section class="cancel-alert">
+            <div class="container-fluid">
+                <div class="content-contain">
+                    <div class="cancel-alert-inner d-flex flex-row align-items-center">
+                        <div class="img-holder">
+                            <img src="img/content-img/easy-cancel.png" alt="easy cancel">
+                        </div>
+                        <div class="cancel-content">
+                            <h6 class="cancel-title">EasyCancel</h6>
+                            <p class="text">
+                                Not sure about your travel plans? Look for the EasyCancel badge to find hotels offering free cancellation on select rooms up to the day before check-in. See your chosen room's cancellation policy for more details.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of cancel-alert -->
+
+        <!-- Explore-section -->
+        <section class="explore-section">
+            <div class="container-fluid">
+                <div class="content-contain">
+                    <div class="explore-title">
+                        <h3>Explore more travel vacation rentals</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 pr-md-2">
+                            <a class="explore-box" href="listing.html">
+                                <div class="image-box">
+                                    <img src="img/content-img/img-1.jpg" alt="">
+                                </div>
+                                <div class="exlore-text">
+                                    <p class="title">Apartments</p>
+                                    <p class="number">156,786 properties</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-3 px-md-2">
+                            <a class="explore-box" href="listing.html">
+                                <div class="image-box">
+                                    <img src="img/content-img/img-2.jpg" alt="">
+                                </div>
+                                <div class="exlore-text">
+                                    <p class="title">Villas</p>
+                                    <p class="number">156,786 properties</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-3 px-md-2">
+                            <a class="explore-box" href="listing.html">
+                                <div class="image-box">
+                                    <img src="img/content-img/img-3.jpg" alt="">
+                                </div>
+                                <div class="exlore-text">
+                                    <p class="title">Vacation Rentals</p>
+                                    <p class="number">156,786 properties</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-3 pl-md-2">
+                            <a class="explore-box" href="listing.html">
+                                <div class="image-box">
+                                    <img src="img/content-img/img-4.jpg" alt="">
+                                </div>
+                                <div class="exlore-text">
+                                    <p class="title">Bungalows</p>
+                                    <p class="number">156,786 properties</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of Explore-section -->
+
+        <!-- Explore-section -->
+        <section class="explore-section testimonials-section">
+            <div class="container-fluid">
+                <div class="content-contain-wider">
+                    <div class="explore-title">
+                        <h3>Overheard from travelers</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 pr-md-2">
+                            <a class="explore-box travelers-box text-center match-height" href="">
+                                <p class="hotel_name">Heritage Hotel</p>
+                                <p class="hotel_country">in the Philippines</p>
+                                <div class="hotel_review">
+                                    <p>
+                                        "We got a great last minute rate with Agoda and this room was spacious with a comfortable and warm bed."
+                                    </p>
+                                </div>
+                                <p class="reviewer">- Henry from Australia</p>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 px-md-2">
+                            <a class="explore-box travelers-box text-center match-height" href="">
+                                <p class="hotel_name">Fairmont Singapore</p>
+                                <p class="hotel_country">in the Singapore</p>
+                                <div class="hotel_review">
+                                    <p>
+                                        "The hotel was simple amazing and I couldn't thank Agoda more for helping out. I've been a customer for awhile and I have to say it's probably my favourite app!"
+                                    </p>
+                                </div>
+                                <p class="reviewer">- Malvin from Singapore</p>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 pl-md-2">
+                            <a class="explore-box travelers-box text-center match-height" href="">
+                                <p class="hotel_name">Novotel Rotorua Lakeside Hotel</p>
+                                <p class="hotel_country">in the Philippines</p>
+                                <div class="hotel_review">
+                                    <p>
+                                        "Started with stress, ended with joy. Thanks Agoda."
+                                    </p>
+                                </div>
+                                <p class="reviewer">- Andrew from Kenya</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of Explore-section -->
+
+
+        <!-- destinations-section -->
+        <section class="explore-section destinations-section">
+            <div class="container-fluid">
+                <div class="content-contain">
+                    <div class="explore-title">
+                        <h3>Popular destinations outside Kenya</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="destination-inner">
+                                <div class="destination-carousel owl-carousel owl-theme">
+                                    <div class="item">
+                                        <a class="destinations-item" href="">
+                                            <div class="img-holder">
+                                                <img src="img/city/img-1.jpg" alt="">
+                                            </div>
+                                            <div class="destination-text">
+                                                <p class="destination-city">Dubai</p>
+                                                <p class="destination-places">11,052 accommodations</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a class="destinations-item" href="">
+                                            <div class="img-holder">
+                                                <img src="img/city/img-2.jpg" alt="">
+                                            </div>
+                                            <div class="destination-text">
+                                                <p class="destination-city">Nairobi</p>
+                                                <p class="destination-places">11,052 accommodations</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a class="destinations-item" href="">
+                                            <div class="img-holder">
+                                                <img src="img/city/img-3.jpg" alt="">
+                                            </div>
+                                            <div class="destination-text">
+                                                <p class="destination-city">Kuala Lumpur</p>
+                                                <p class="destination-places">11,052 accommodations</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a class="destinations-item" href="">
+                                            <div class="img-holder">
+                                                <img src="img/city/img-4.jpg" alt="">
+                                            </div>
+                                            <div class="destination-text">
+                                                <p class="destination-city">London</p>
+                                                <p class="destination-places">11,052 accommodations</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a class="destinations-item" href="">
+                                            <div class="img-holder">
+                                                <img src="img/city/img-5.jpg" alt="">
+                                            </div>
+                                            <div class="destination-text">
+                                                <p class="destination-city">New York</p>
+                                                <p class="destination-places">11,052 accommodations</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a class="destinations-item" href="">
+                                            <div class="img-holder">
+                                                <img src="img/city/img-6.jpg" alt="">
+                                            </div>
+                                            <div class="destination-text">
+                                                <p class="destination-city">San Fransisco</p>
+                                                <p class="destination-places">11,052 accommodations</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a class="destinations-item" href="">
+                                            <div class="img-holder">
+                                                <img src="img/city/img-7.jpg" alt="">
+                                            </div>
+                                            <div class="destination-text">
+                                                <p class="destination-city">Berlin</p>
+                                                <p class="destination-places">11,052 accommodations</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a class="destinations-item" href="">
+                                            <div class="img-holder">
+                                                <img src="img/city/img-8.jpg" alt="">
+                                            </div>
+                                            <div class="destination-text">
+                                                <p class="destination-city">Manchester</p>
+                                                <p class="destination-places">11,052 accommodations</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a class="destinations-item" href="">
+                                            <div class="img-holder">
+                                                <img src="img/city/img-9.jpg" alt="">
+                                            </div>
+                                            <div class="destination-text">
+                                                <p class="destination-city">Tokyo</p>
+                                                <p class="destination-places">11,052 accommodations</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a class="destinations-item" href="">
+                                            <div class="img-holder">
+                                                <img src="img/city/img-1.jpg" alt="">
+                                            </div>
+                                            <div class="destination-text">
+                                                <p class="destination-city">Qatar</p>
+                                                <p class="destination-places">11,052 accommodations</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a class="destinations-item" href="">
+                                            <div class="img-holder">
+                                                <img src="img/city/img-2.jpg" alt="">
+                                            </div>
+                                            <div class="destination-text">
+                                                <p class="destination-city">Shanghai</p>
+                                                <p class="destination-places">11,052 accommodations</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of destinations-section -->
+
+        <!-- sub-footer-section -->
+        <section class="sub-footer-section destinations-section grey-section">
+            <div class="container-fluid">
+                <div class="content-contain">
+                    <div class="row row-footer">
+                        <div class="col">
+                            <div class="sub-footer-box">
+                                <h5>Help</h5>
+                                <ul>
+                                    <li><a>Help center</a></li>
+                                    <li><a>FAQs</a></li>
+                                    <li><a>Privacy policy</a></li>
+                                    <li><a>Cookie policy</a></li>
+                                    <li><a>Terms of use</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="sub-footer-box">
+                                <h5>About us</h5>
+                                <ul>
+                                    <li><a>About us</a></li>
+                                    <li><a>FAQs</a></li>
+                                    <li><a>Privacy policy</a></li>
+                                    <li><a>Cookie policy</a></li>
+                                    <li><a>Terms of use</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="sub-footer-box">
+                                <h5>Destinations</h5>
+                                <ul>
+                                    <li><a>Help center</a></li>
+                                    <li><a>FAQs</a></li>
+                                    <li><a>Privacy policy</a></li>
+                                    <li><a>Cookie policy</a></li>
+                                    <li><a>Terms of use</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="sub-footer-box">
+                                <h5>Partner with us</h5>
+                                <ul>
+                                    <li><a>Help center</a></li>
+                                    <li><a>FAQs</a></li>
+                                    <li><a>Privacy policy</a></li>
+                                    <li><a>Cookie policy</a></li>
+                                    <li><a>Terms of use</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="sub-footer-box">
+                                <h5>Get the app</h5>
+                                <ul>
+                                    <li><a>iOS app</a></li>
+                                    <li><a>Android app</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- sub-footer-section -->
+
+        <!-- footer-section -->
+        <section class="sub-footer-section footer-section">
+            <div class="container-fluid">
+                <div class="content-contain">
+                    <div class="row row-footer">
+                        <div class="col">
+                            <div class="sub-footer-box">
+                                <h5>Destination Cities</h5>
+                                <h5>Asia</h5>
+                                <ul>
+                                    <li><a>Bali Hotels</a></li>
+                                    <li><a>Bali Hotels</a></li>
+                                    <li><a>Bali Hotels</a></li>
+                                    <li><a>Bali Hotels</a></li>
+                                    <li><a>Bali Hotels</a></li>
+                                </ul>
+                                <h5>Asia</h5>
+                                <ul>
+                                    <li><a>Singapore Hotels</a></li>
+                                    <li><a>Singapore Hotels</a></li>
+                                    <li><a>Singapore Hotels</a></li>
+                                    <li><a>Singapore Hotels</a></li>
+                                    <li><a>Singapore Hotels</a></li>
+                                </ul>
+                                <h5>Asia</h5>
+                                <ul>
+                                    <li><a>Singapore Hotels</a></li>
+                                    <li><a>Singapore Hotels</a></li>
+                                    <li><a>Singapore Hotels</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="sub-footer-box">
+                                <h5>Europe</h5>
+                                <ul>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                </ul>
+                                <h5>Middle East</h5>
+                                <ul>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                </ul>
+                                <h5>Middle East</h5>
+                                <ul>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                </ul>
+                                <h5>Middle East</h5>
+                                <ul>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="sub-footer-box">
+                                <h5>Americas</h5>
+                                <ul>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                </ul>
+                                <h5>Africa</h5>
+                                <ul>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                </ul>
+                                <h5>Africa</h5>
+                                <ul>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="sub-footer-box">
+                                <h5>Europe</h5>
+                                <ul>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                </ul>
+                                <h5>Middle East</h5>
+                                <ul>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                </ul>
+                                <h5>Middle East</h5>
+                                <ul>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                </ul>
+                                <h5>Middle East</h5>
+                                <ul>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="sub-footer-box">
+                                <h5>Middle East</h5>
+                                <ul>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                    <li><a>London Hotels</a></li>
+                                </ul>
+                                <h5>Americas</h5>
+                                <ul>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                </ul>
+                                <h5>Americas</h5>
+                                <ul>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="sub-footer-box">
+                                <h5>Americas</h5>
+                                <ul>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                </ul>
+                                <h5>Africa</h5>
+                                <ul>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                </ul>
+                                <h5>Africa</h5>
+                                <ul>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                    <li><a>Argentina Hotels</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer-section -->
+
+        <!-- copyright-section -->
+        <section class="copyright-section">
+            <div class="container-fluid">
+                <div class="content-contain">
+                    <div class="text-center copyrights-text">
+                        <p class="copyrights-info">All material herein © 2005–2021 Agoda Company Pte. Ltd. All Rights Reserved.</p>
+                        <p class="copyrights-info">Agoda is part of Booking Holdings Inc., the world leader in online travel &amp; related services.</p>
+                    </div>
+                    <ul class="copyright-ul">
+                        <li>
+                            <a href="">
+                                <img src="img/logos/logo.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/logos/logo.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/logos/logo.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/logos/logo.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/logos/logo.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/logos/logo.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="text-center copyrights-text">
+                        <p class="copyrights-info">©2021</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- copyright-section -->
+
+
+
+    </div>
+    <!-- entry-box -->
+
+    <script src="js/jquery.min.js " type="text/javascript "></script>
+    <script src="js/jquery.matchHeight.js " type="text/javascript "></script>
+    <script src="js/owl.carousel.js" type="text/javascript "></script>
+    <script src="js/bootstrap.bundle.js " type="text/javascript "></script>
+    <script src="js/main.js" type="text/javascript "></script>
+
+</body>
+
+</html>
